@@ -52,11 +52,14 @@ const Rece = ({ rece }) => {
 
     const { receta, guardarIdReceta, guardarReceta } = useContext(ModalContext);
 
+
+
     // Muestra y formatea los ingredientes
 
     const mostrarIngredientes = receta => {
+
         let ingredientes = [];
-        for (let i = 1; 1 < 16; i++) {
+        for (let i = 1; i < 16; i++) {
             if (receta[`strIngredient${i}`]) {
                 ingredientes.push(
                     <li>{receta[`strIngredient${i}`]} {receta[`strMeasure${i}`]}</li>
@@ -100,7 +103,7 @@ const Rece = ({ rece }) => {
                             <h2>{receta.strDrink}</h2>
                             <h3 className="mt-5">Instrucciones</h3>
                             <p>{receta.strInstructions}</p>
-                            <img className="img-fluid my-4" src={receta.strDrinkThumb} />
+                            <img className="img-fluid my-4" src={receta.strDrinkThumb} alt="Thumb from API" />
                             <h3>Ingredientes y Cantidades</h3>
                             <ul>
                                 {mostrarIngredientes(receta)}

@@ -15,6 +15,7 @@ const ModalProvider = (props) => {
 
     const [receta, guardarReceta] = useState({});
 
+
     // Una vez que tenemos una receta llamar la API 
 
     useEffect(() => {
@@ -25,7 +26,11 @@ const ModalProvider = (props) => {
 
             const resultado = await axios.get(url);
 
-            guardarReceta(resultado.data.drinks[0]);
+            if (resultado !== '') {
+                guardarReceta(resultado.data.drinks[0])
+            }
+
+            ;
         }
         obtenerReceta();
     }, [idreceta]);

@@ -1,3 +1,16 @@
 .makeStyles-paper-1 > img{
     max-height: 40vh;
 }
+
+@media(max-width:880px){
+    .makeStyles-paper-1{
+        max-width: 50vh;
+        max-height: 90vh;
+        
+    }
+    
+    .makeStyles-paper-1 > img{
+        max-height: 20vh;
+        max-width: 15vh;
+    }   
+}
