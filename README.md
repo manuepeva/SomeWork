@@ -3,7 +3,7 @@ Title: Drinks API Application.
 Description: Project created using create-react-app, and CSS to create a single page application, that retrieve information from the https://www.thecocktaildb.com/api
 API.
 
-Objective: Deliver a customer facing patient manager that allow user to search for drinks.
+Objective: Deliver a customer facing drink-searching interface that allow user to search for drinks and cocktails.
 
 [![Header](https://raw.githubusercontent.com/manuepeva/Drinks--API---Material-UI/master/drinks.png "Header")](https://raw.githubusercontent.com/manuepeva/Drinks--API---Material-UI/master/drinks.png)
 
